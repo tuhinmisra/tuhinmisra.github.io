@@ -152,13 +152,17 @@ section { padding: 72px 0; }
 .contact-item span { color: var(--muted); font-size: 0.9rem; }
 
 /* Footer */
-footer { border-top: 1px solid var(--line); padding: 32px 0 44px; color: var(--muted); font-size: 0.9rem; }
-footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px; }
-.foot-col { display: grid; gap: 4px; align-content: start; }
-.foot-col strong { color: var(--text); font-family: "Space Grotesk", sans-serif; font-size: 1rem; }
-.foot-col.right { text-align: right; }
-.foot-col a { transition: color .2s; }
-.foot-col a:hover { color: var(--accent); }
+
+footer { border-top: 1px solid var(--line); padding: 48px 0 56px; margin-top: 24px; color: var(--muted); font-size: 0.9rem; }
+.foot-grid { display: grid; grid-template-columns: 0.9fr 1.1fr 1fr 1.4fr; }
+.foot-cell { display: grid; gap: 8px; align-content: start; padding: 4px 28px; border-left: 1px solid var(--line); }
+.foot-cell:first-child { padding-left: 0; border-left: none; }
+.foot-name strong { font-family: "Space Grotesk", sans-serif; font-size: 1.25rem; color: var(--text); letter-spacing: -0.01em; }
+.foot-copy { font-size: 0.8rem; }
+.foot-label { font-size: 0.72rem; letter-spacing: 0.14em; text-transform: uppercase; color: var(--accent); }
+.foot-value { color: var(--text); font-size: 0.98rem; overflow-wrap: anywhere; }
+a.foot-value { transition: color .2s; }
+a.foot-value:hover { color: var(--accent); }
 
 /* Reveal animation */
 .js .reveal { opacity: 0; transform: translateY(18px); transition: opacity .7s ease, transform .7s ease; }
@@ -174,7 +178,9 @@ footer .wrap { display: flex; justify-content: space-between; flex-wrap: wrap; g
   .links { display: none; position: absolute; top: 68px; left: 0; right: 0; flex-direction: column; align-items: stretch; padding: 14px 24px 20px; background: rgba(10, 22, 40,0.97); border-bottom: 1px solid var(--line); }
   .links.open { display: flex; }
   .links a { padding: 12px 14px; }
-  .foot-col.right { text-align: left; }
+  .foot-grid { grid-template-columns: 1fr; }
+  .foot-cell { padding: 18px 0; border-left: none; border-top: 1px solid var(--line); }
+  .foot-cell:first-child { padding-top: 0; border-top: none; }
 }
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
