@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aircraft Design | Tuhin Misra</title>
+  <meta name="description" content="Design philosophy for new aircraft and for modifying existing aircraft to serve different missions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot"></span>Tuhin Misra</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a class="active" href="design.html">Aircraft Design</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="page-head">
+        <span class="eyebrow">Aircraft Design</span>
+        <h1>The mission comes first. The <span class="grad">shape</span> follows.</h1>
+        <p class="lead">Aircraft design is the art of balancing demands that pull in opposite directions. I am drawn to it because no single choice is ever free. More range costs weight, more speed costs efficiency, and more payload costs agility.</p>
+      </div>
+
+      <section>
+        <div class="section-head reveal">
+          <h2>New design and modification</h2>
+          <p>I am equally interested in building something new and in adapting something that already exists. They reward different instincts.</p>
+        </div>
+        <div class="compare">
+          <div class="panel reveal">
+            <h3>Designing a new aircraft</h3>
+            <p>A blank page allows the configuration itself to be chosen for the job. The work is to find the combination of wing, tail, and propulsion that meets the requirements with the least compromise.</p>
+            <ul>
+              <li>Translate mission needs into measurable requirements</li>
+              <li>Select a configuration, such as conventional, flying wing, or blended body</li>
+              <li>Size the wing and propulsion system through constraint analysis</li>
+              <li>Verify stability, control, and performance before committing to hardware</li>
+            </ul>
+          </div>
+          <div class="panel reveal">
+            <h3>Modifying an existing aircraft</h3>
+            <p>An existing airframe brings proven structure and known behavior, but also limits. Success means adding the new capability while protecting the margins that made the original reliable.</p>
+            <ul>
+              <li>Quantify the change in weight, balance, and drag</li>
+              <li>Reassess stability and control after every geometry change</li>
+              <li>Integrate new payloads, sensors, or propulsion with minimal structural impact</li>
+              <li>Confirm that performance in the new role justifies the modification</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head reveal">
+          <h2>Designing for different missions</h2>
+          <p>The same airframe can look excellent for one purpose and poor for another. These are the mission families I enjoy thinking about most.</p>
+        </div>
+        <div class="cards two">
+          <article class="card reveal">
+            <h3>Endurance and surveillance</h3>
+            <p>Long, efficient wings, low wing loading, and careful weight control. The priority is time on station, so every gram and every unit of drag matters.</p>
+            <div class="tags"><span class="tag">High aspect ratio</span><span class="tag">Efficiency</span></div>
+          </article>
+          <article class="card reveal">
+            <h3>High-speed flight</h3>
+            <p>Thin sections, reduced wetted area, and attention to compressibility. At high Mach numbers, aerodynamics and propulsion become tightly linked.</p>
+            <div class="tags"><span class="tag">Transonic</span><span class="tag">Supersonic</span></div>
+          </article>
+          <article class="card reveal">
+            <h3>Payload and utility</h3>
+            <p>Volume, center of gravity range, and ease of loading drive the layout. A good utility aircraft stays predictable across a wide range of loadings.</p>
+            <div class="tags"><span class="tag">CG envelope</span><span class="tag">Modularity</span></div>
+          </article>
+          <article class="card reveal">
+            <h3>Short field and flexible operations</h3>
+            <p>High-lift devices, strong control authority at low speed, and rugged structure allow an aircraft to operate where runways are limited.</p>
+            <div class="tags"><span class="tag">High lift</span><span class="tag">Low speed control</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head reveal">
+          <h2>How I work through a design</h2>
+        </div>
+        <div class="steps">
+          <div class="step reveal"><h3>Define the mission</h3><p>Write down range, endurance, speed, payload, and operating environment before drawing anything.</p></div>
+          <div class="step reveal"><h3>Estimate and size</h3><p>Use first-order methods to find a weight, wing area, and power level that close the design.</p></div>
+          <div class="step reveal"><h3>Analyze</h3><p>Apply computational fluid dynamics and stability calculations to test whether the geometry behaves as expected.</p></div>
+          <div class="step reveal"><h3>Build and test</h3><p>Fabricate, fly, and measure. Compare results with predictions and record every difference.</p></div>
+          <div class="step reveal"><h3>Iterate</h3><p>Use what was learned to refine the design, or to adapt it to a new mission altogether.</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Tuhin Misra</span>
+      <span>Aerospace Engineering, Embry-Riddle Aeronautical University</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

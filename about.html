@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Tuhin Misra</title>
+  <meta name="description" content="Background, education, and motivation of Tuhin Misra, an aerospace engineering student focused on aircraft design.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot"></span>Tuhin Misra</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="links">
+        <a href="index.html">Home</a>
+        <a class="active" href="about.html">About</a>
+        <a href="design.html">Aircraft Design</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <div class="page-head">
+        <span class="eyebrow">About</span>
+        <h1>An engineer who wants to see the design <span class="grad">fly</span>.</h1>
+      </div>
+
+      <section>
+        <div class="split">
+          <div class="photo-frame reveal">
+            <div class="photo-box">
+              <img src="photo.jpg" alt="Portrait of Tuhin Misra" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+              <div class="photo-fallback">TM</div>
+            </div>
+          </div>
+          <div class="prose reveal">
+            <p>I am a sophomore studying <strong>Aerospace Engineering at Embry-Riddle Aeronautical University</strong> in Daytona Beach, with an expected graduation in May 2029. My central interest is aircraft design, both the creation of new aircraft and the modification of existing ones for missions they were never originally built to perform.</p>
+            <p>That interest shows up in several parts of my work. As an undergraduate researcher in the <strong>Computational Fluids and Aerodynamics Laboratory</strong>, I use computational fluid dynamics to study how air behaves around a shape. As a co-founder and flight lead at <strong>Slingshot Aeronautics</strong>, I help turn designs into hardware and carry them through flight operations.</p>
+            <p>Outside of coursework, I pursue personal projects that stretch my understanding. One is a glider designed and flight tested for performance. Another is a conceptual study of what it would take for a small drone to reach Mach 1.</p>
+            <p>I believe an aircraft is best understood as an answer to a mission. When the mission changes, the answer must change with it, and that process of reasoning from purpose to geometry is what I enjoy most.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head reveal">
+          <h2>What I work with</h2>
+        </div>
+        <div class="cards">
+          <div class="card reveal"><h3>Design</h3><p>Conceptual and preliminary sizing, configuration selection, performance estimation, and stability analysis.</p></div>
+          <div class="card reveal"><h3>Analysis</h3><p>Computational fluid dynamics, aerodynamic characterization, and trade studies that compare competing options fairly.</p></div>
+          <div class="card reveal"><h3>Testing</h3><p>Building, flight testing, and learning from results so that each iteration improves on the last.</p></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Tuhin Misra</span>
+      <span>Aerospace Engineering, Embry-Riddle Aeronautical University</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

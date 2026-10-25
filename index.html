@@ -3,10 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Your Name | Portfolio</title>
+  <title>Tuhin Misra | Aircraft Design</title>
+  <meta name="description" content="Aerospace engineering student focused on designing new aircraft and modifying existing ones for specific missions.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Your Name</h1>
-  <p>Aerospace engineering student. Add one sentence about your focus here.</p>
+  <header class="nav">
+    <div class="wrap">
+      <a class="brand" href="index.html"><span class="dot"></span>Tuhin Misra</a>
+      <button class="menu-btn" aria-label="Toggle menu" aria-expanded="false">&#9776;</button>
+      <nav class="links">
+        <a class="active" href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="design.html">Aircraft Design</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <div class="wrap">
+      <section class="hero">
+        <div class="grid">
+          <div>
+            <span class="eyebrow">Aerospace Engineering &middot; Embry-Riddle</span>
+            <h1>I design aircraft around the <span class="grad">mission</span>, then make them fly.</h1>
+            <p class="lead">My passion is aircraft design in two forms: creating new configurations from a blank page, and reworking existing airframes so they can serve a different purpose. Every design begins with the same question. What does this aircraft need to do?</p>
+            <div class="actions">
+              <a class="btn primary" href="projects.html">View projects</a>
+              <a class="btn ghost" href="design.html">How I design</a>
+            </div>
+          </div>
+          <div class="photo-frame">
+            <div class="photo-box">
+              <img src="photo.jpg" alt="Portrait of Tuhin Misra" onerror="this.style.display='none';this.nextElementSibling.style.display='grid'">
+              <div class="photo-fallback">TM</div>
+              <span class="photo-tag">Daytona Beach, Florida</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stats reveal">
+          <div class="stat"><strong>BS Aerospace Engineering</strong><span>Embry-Riddle Aeronautical University, expected May 2029</span></div>
+          <div class="stat"><strong>Co-founder, Slingshot Aeronautics</strong><span>Flight lead for a student-founded aeronautics venture</span></div>
+          <div class="stat"><strong>CFD Undergraduate Researcher</strong><span>Computational Fluids and Aerodynamics Laboratory</span></div>
+        </div>
+      </section>
+
+      <section>
+        <div class="section-head reveal">
+          <h2>Two ways of designing</h2>
+          <p>A new aircraft gives freedom to choose every parameter. A modified aircraft demands discipline, because the existing structure, systems, and certification history shape what is possible. Both teach something the other cannot.</p>
+        </div>
+        <div class="cards">
+          <article class="card reveal">
+            <div class="icon">&#9998;</div>
+            <h3>Clean-sheet design</h3>
+            <p>Starting from requirements, I size the wing, tail, and propulsion system, then iterate until range, endurance, speed, and payload agree with one another.</p>
+            <div class="tags"><span class="tag">Sizing</span><span class="tag">Configuration</span><span class="tag">Trade studies</span></div>
+          </article>
+          <article class="card reveal">
+            <div class="icon">&#9881;</div>
+            <h3>Modification and adaptation</h3>
+            <p>Existing airframes can take on new roles through new payload bays, wing changes, or different propulsion. The challenge is to gain capability without losing stability or margin.</p>
+            <div class="tags"><span class="tag">Retrofit</span><span class="tag">Payload integration</span><span class="tag">Stability</span></div>
+          </article>
+          <article class="card reveal">
+            <div class="icon">&#9992;</div>
+            <h3>Built and flown</h3>
+            <p>I prefer designs that leave the screen. Flight testing exposes problems that analysis alone can hide, and it makes every later estimate more honest.</p>
+            <div class="tags"><span class="tag">Flight test</span><span class="tag">CFD</span><span class="tag">Iteration</span></div>
+          </article>
+        </div>
+      </section>
+
+      <section>
+        <div class="cta reveal">
+          <h2>Let us talk aircraft.</h2>
+          <p>I am seeking opportunities in aircraft design, aerodynamics, and flight test. If you are working on something interesting, I would like to hear about it.</p>
+          <div class="actions">
+            <a class="btn primary" href="contact.html">Get in touch</a>
+            <a class="btn ghost" href="resume.pdf">Download resume</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <span>&copy; <span id="year">2026</span> Tuhin Misra</span>
+      <span>Aerospace Engineering, Embry-Riddle Aeronautical University</span>
+    </div>
+  </footer>
+  <script src="script.js"></script>
 </body>
 </html>
